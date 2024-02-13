@@ -71,9 +71,10 @@ Hasil EDA:
 Berdasarkan hasil Exploratory Data Analysis (EDA), dapat dilihat bahwa dari univariated analisis, variabel street, dapat disimpulkan bahwa, hampir semua lokasi berbeda beda. terdapat 3604 rumah yang tersebar di 3596 jalan. 
 ![univariate_street](https://github.com/ariftampan/Submission1-MLT/assets/138217930/a873d7e3-0bcb-41fe-930c-9685a6fceee6)
 <br>
-<p>variabel city 
-<p><img width="226" alt="image" src="https://github.com/ariftampan/Submission1-MLT/assets/138217930/e6ae80af-55e0-4d1c-b806-affcf4da89c6">
-<p>![city](https://github.com/ariftampan/Submission1-MLT/assets/138217930/1888e8f7-b7eb-4eee-bbfa-8ab512a31773)
+<p>variabel city </p>
+<img width="226" alt="Screenshot 2024-02-13 175917" src="https://github.com/ariftampan/Submission1-MLT/assets/138217930/80407583-5d0a-4d04-9a50-c3c6eaeb23db">
+
+![city](https://github.com/ariftampan/Submission1-MLT/assets/138217930/1888e8f7-b7eb-4eee-bbfa-8ab512a31773)
 
 dari gambar disimpulkan bahwa 
 - Distribusi harga rumah cenderung normal, dengan mayoritas properti memiliki harga di kisaran tertentu.
