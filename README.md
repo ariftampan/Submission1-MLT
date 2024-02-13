@@ -61,22 +61,29 @@ Keberhasilan proyek ini akan diukur berdasarkan:
 - yr_renovated : tahun renovasi dilakukan pada properti.
 - street : alamat jalan properti
 - city : alamat kota dari properti
-
-Visualisasi dan Statistik Deskriptif:
-
-- grafik pairplot hubungan antar variabel tahun pembangunan, jumlah lantai, jumlah kamar tidur, dan ruang hidup.
-- gambar Korelasi matrik antar variabel
-
-Hasil EDA:
-Berdasarkan hasil Exploratory Data Analysis (EDA), dapat dilihat bahwa dari univariated analisis, variabel street, dapat disimpulkan bahwa, hampir semua lokasi berbeda beda. terdapat 3604 rumah yang tersebar di 3596 jalan. 
-![univariate_street](https://github.com/ariftampan/Submission1-MLT/assets/138217930/a873d7e3-0bcb-41fe-930c-9685a6fceee6)
 <br>
-<p>variabel city </p>
+Univariate Analisis<br>
+variabel street
+Dari gambar dapat disimpulkan bahwa, hampir semua lokasi berbeda beda. terdapat 3604 rumah yang tersebar di 3596 jalan.
+
+![univariate_street](https://github.com/ariftampan/Submission1-MLT/assets/138217930/9236ce59-8c74-41b0-9d7c-53ee6075c4cd)
+
+
+variabel city
 <img width="226" alt="Screenshot 2024-02-13 175917" src="https://github.com/ariftampan/Submission1-MLT/assets/138217930/80407583-5d0a-4d04-9a50-c3c6eaeb23db">
 
 ![city](https://github.com/ariftampan/Submission1-MLT/assets/138217930/1888e8f7-b7eb-4eee-bbfa-8ab512a31773)
 
-dari gambar disimpulkan bahwa 
+dari gambar disimpulkan bahwa rumah di seattle., renton dan bellevue menempati 50% dari jumlah rumah yang dijual.
+<p>Numerical Analisis</p>
+
+![download (3)](https://github.com/ariftampan/Submission1-MLT/assets/138217930/a11fb6f1-96a6-485c-af1f-6ad9ac7fcef9)
+dari gambar numerical analisis dapat disimpulkan bahwa:<br>
+Peningkatan harga diamonds sebanding dengan penurunan jumlah sampel. Hal ini dapat kita lihat jelas dari histogram "price" yang grafiknya mengalami penurunan seiring dengan semakin banyaknya jumlah sampel (sumbu y).<br>
+Rentang harga rumah cukup tinggi yaitu dari skala seratusan ribu dolar Amerika hingga sekitar 1.100.000 an dollar Amerika.<br>
+Distribusi harga miring ke kanan (right-skewed). Hal ini akan berimplikasi pada model.<br>
+
+
 - Distribusi harga rumah cenderung normal, dengan mayoritas properti memiliki harga di kisaran tertentu.
 - Terdapat korelasi positif antara sqft_living( Luas ruang hidup dalam feet persegi ), sqft_above (luas lantai di atas permukaan tanah dalam feet persegi)dan harga rumah.
 
