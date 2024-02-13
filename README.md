@@ -68,9 +68,14 @@ Visualisasi dan Statistik Deskriptif:
 - gambar Korelasi matrik antar variabel
 
 Hasil EDA:
-Berdasarkan hasil Exploratory Data Analysis (EDA), dapat dilihat bahwa dari univariated analisis, variabel street, bahwa tidak terdapat hubungan antara alamat dengan harga. Hal ini karena masing masing properties berada pada alamat yang berbeda beda kecuali 1 alamat saja. 
+Berdasarkan hasil Exploratory Data Analysis (EDA), dapat dilihat bahwa dari univariated analisis, variabel street, dapat disimpulkan bahwa, hampir semua lokasi berbeda beda. terdapat 3604 rumah yang tersebar di 3596 jalan. 
 ![univariate_street](https://github.com/ariftampan/Submission1-MLT/assets/138217930/a873d7e3-0bcb-41fe-930c-9685a6fceee6)
+<br>
+<p>variabel city 
+<p><img width="226" alt="image" src="https://github.com/ariftampan/Submission1-MLT/assets/138217930/e6ae80af-55e0-4d1c-b806-affcf4da89c6">
+<p>![city](https://github.com/ariftampan/Submission1-MLT/assets/138217930/1888e8f7-b7eb-4eee-bbfa-8ab512a31773)
 
+dari gambar disimpulkan bahwa 
 - Distribusi harga rumah cenderung normal, dengan mayoritas properti memiliki harga di kisaran tertentu.
 - Terdapat korelasi positif antara sqft_living( Luas ruang hidup dalam feet persegi ), sqft_above (luas lantai di atas permukaan tanah dalam feet persegi)dan harga rumah.
 
