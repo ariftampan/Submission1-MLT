@@ -78,10 +78,11 @@ dari gambar disimpulkan bahwa rumah di seattle., renton dan bellevue menempati 5
 <p>Numerical Analisis</p>
 
 ![download (3)](https://github.com/ariftampan/Submission1-MLT/assets/138217930/a11fb6f1-96a6-485c-af1f-6ad9ac7fcef9)
-dari gambar numerical analisis dapat disimpulkan bahwa:<br>
-Peningkatan harga diamonds sebanding dengan penurunan jumlah sampel. Hal ini dapat kita lihat jelas dari histogram "price" yang grafiknya mengalami penurunan seiring dengan semakin banyaknya jumlah sampel (sumbu y).<br>
-Rentang harga rumah cukup tinggi yaitu dari skala seratusan ribu dolar Amerika hingga sekitar 1.100.000 an dollar Amerika.<br>
-Distribusi harga miring ke kanan (right-skewed). Hal ini akan berimplikasi pada model.<br>
+Apabila dicermati, dari histogram di atas, khususnya histogram untuk variabel price yang merupakan fitur target (label) pada data. Dari histogram price, dapat diperoleh beberapa informasi, antara lain:<br>
+- Rentang harga rumah cukup tinggi yaitu dari skala seratusan ribu dolar Amerika hingga sekitar 1.100.000 an dollar Amerika. dengan lebih dari 50% berada dibawah 600 rb usd. <br>
+- Distribusi harga miring ke kanan (right-skewed). Hal ini akan berimplikasi pada model.<br>
+
+Multivariate Analisis<br>
 
 
 - Distribusi harga rumah cenderung normal, dengan mayoritas properti memiliki harga di kisaran tertentu.
