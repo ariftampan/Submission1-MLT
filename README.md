@@ -194,24 +194,13 @@ Berdasarkan perbandingan kinerja, Random Forest (RF) terbukti menjadi model yang
 
 ## Evaluation
 
-Metrik Evaluasi: Mean Squared Error (MSE)
+Metrik Evaluasi Mean Squared Error (MSE)
 
 ![tabel mse](https://github.com/ariftampan/Submission1-MLT/assets/138217930/60ba25b9-e74d-470b-9252-ebd931fcf32b)
 
-Interpretasi Nilai MSE:
-Nilai MSE yang lebih rendah menunjukkan bahwa model memiliki tingkat kesalahan yang lebih kecil.
-Nilai MSE yang lebih tinggi mengindikasikan bahwa model memiliki tingkat kesalahan yang lebih besar.
+Nilai MSE yang lebih rendah menunjukkan bahwa model memiliki tingkat kesalahan yang lebih kecil. dan nilai MSE yang lebih tinggi mengindikasikan bahwa model memiliki tingkat kesalahan yang lebih besar.
 
-Dampak Praktis:
-Dalam konteks prediksi harga rumah, nilai MSE yang rendah menunjukkan bahwa model memberikan prediksi harga yang akurat dan mendekati nilai sebenarnya.
+Dalam prediksi harga rumah, nilai MSE yang rendah menunjukkan bahwa model memberikan prediksi harga yang akurat dan mendekati nilai sebenarnya.
 Sebaliknya, nilai MSE yang tinggi menunjukkan bahwa model memiliki tingkat kesalahan yang besar dalam memprediksi harga rumah.
 
-Hasil Metrik Evaluasi:
-Dari hasil evaluasi menggunakan MSE pada data latih dan data uji, kita dapat:
-Membandingkan performa relatif dari model KNN, Random Forest (RF), dan Boosting.
-Menilai seberapa baik model-model tersebut dalam menghasilkan prediksi harga rumah yang akurat.
-Menyesuaikan model atau parameter jika diperlukan untuk meningkatkan performa.
-
-Kesimpulan:
-Model dengan nilai MSE yang lebih rendah dianggap lebih baik dalam konteks ini.
-Evaluasi ini membantu memahami seberapa efektif model dalam memenuhi goals proyek, yaitu memberikan prediksi harga rumah yang akurat dan relevan.
+Dari hasil evaluasi menggunakan MSE pada data latih dan data uji, telah dibandingkan performa relatif dari model KNN, Random Forest (RF), dan Boosting, dan dapat diambil kesimpulan bahwa Model RF dianggap lebih baik dalam konteks ini.
