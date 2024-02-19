@@ -196,16 +196,7 @@ Berdasarkan perbandingan kinerja, Random Forest (RF) terbukti menjadi model yang
 
 Metrik Evaluasi: Mean Squared Error (MSE)
 
-Formula Metrik:
-MSE merupakan metrik evaluasi yang mengukur rata-rata dari kuadrat selisih antara nilai sebenarnya dan nilai prediksi. Formula MSE dapat dihitung dengan rumus berikut:
-
-Dimana:
-N: jumlah observasi.
-yi: nilai sebenarnya.
-y_pred: nilai prediksi
-
-Cara Kerja Metrik:
-MSE mengukur seberapa besar kesalahan prediksi model dengan cara mengevaluasi seberapa besar deviasi antara nilai sebenarnya dan nilai prediksi, kemudian menghitung rata-rata kuadrat dari deviasi tersebut. MSE memberikan bobot lebih besar pada kesalahan yang lebih besar, sehingga mengindikasikan seberapa buruk performa model dalam memprediksi data.
+![tabel mse](https://github.com/ariftampan/Submission1-MLT/assets/138217930/60ba25b9-e74d-470b-9252-ebd931fcf32b)
 
 Interpretasi Nilai MSE:
 Nilai MSE yang lebih rendah menunjukkan bahwa model memiliki tingkat kesalahan yang lebih kecil.
