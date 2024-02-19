@@ -83,13 +83,31 @@ Apabila dicermati, dari histogram di atas, khususnya histogram untuk variabel pr
 - Distribusi harga miring ke kanan (right-skewed). Hal ini akan berimplikasi pada model.<br>
 
 Multivariate Analisis<br>
+Categorical Features<br>
+
+![Multivariate-street](https://github.com/ariftampan/Submission1-MLT/assets/138217930/9b5bc4e2-8153-41c0-9cd7-f665b5788a9f)
+
+![Multivariate-city](https://github.com/ariftampan/Submission1-MLT/assets/138217930/aae92dac-84a1-4094-9050-86cce0312b29)
 
 
-- Distribusi harga rumah cenderung normal, dengan mayoritas properti memiliki harga di kisaran tertentu.
-- Terdapat korelasi positif antara sqft_living( Luas ruang hidup dalam feet persegi ), sqft_above (luas lantai di atas permukaan tanah dalam feet persegi)dan harga rumah.
+Dari gambar diatas, korelasi antara categorical features dengan price, dapat diperoleh kesimpulan bahwa:
+- pada fitur street, hampir setiap properties rumah menempati alamat yang berbeda beda. jadi tidak dapat diambil korelasi dari variabel street
+- pada fitur city , yang menempati harga tertinggi di belevue dan kirkland seharga 1.15M USD
+dari data diatas, dapat diambil kesimpulan kalau categorical fitur tidak korelasi secara langsung dnegan harga
+
+Numerical Feature<br>
+dari data, dapat diperoleh grafik sebagai berikut:
+
+![multivariate-numerical](https://github.com/ariftampan/Submission1-MLT/assets/138217930/01c6075e-4801-4de5-b62e-f63402601cec)
+
+Terlihat dari grafik diatas, relasi antara fitur numerik dengan fitur target yaitu price. sebaran data yang terpola terdapat pada grafik relasi antara sqft_living vs price dan sqft_above vs price.
+dapat disimpulkan bahwa sqft_living dan sqft_above adalah yang memiliki relasi dominan terhadap price , terlebih bisa dilihat dengan tabel dibawah, dimana utk sqft_lving dan sqft_above memiliki nilai yang mendekati 1.
+
+![tabel](https://github.com/ariftampan/Submission1-MLT/assets/138217930/634ab513-050b-4742-874a-d78a24f71f2c)
+
 
 Kesimpulan Data Understanding:
-Data yang digunakan untuk prediksi harga rumah mencakup berbagai fitur dan karakteristik properti. EDA telah membantu mendapatkan wawasan mendalam terhadap variabel-variabel tersebut dan hubungannya dengan harga. Data ini siap digunakan dalam pengembangan model machine learning untuk memprediksi harga rumah dengan lebih akurat, dengan fokus pada fitur-fitur yang signifikan yaitu sqft_living, dan sqft_above dalam menentukan nilai properti.
+Data yang digunakan untuk prediksi harga rumah mencakup berbagai fitur dan karakteristik properti. EDA telah membantu mendapatkan wawasan mendalam terhadap variabel-variabel tersebut dan hubungannya dengan harga. Data ini siap digunakan dalam pengembangan model machine learning untuk memprediksi harga rumah dengan lebih akurat, dengan fokus pada fitur-fitur yang signifikan yaitu <b>sqft_living</b>, dan <b>sqft_above</b> dalam menentukan nilai properti.
 
 ## Data Preparation
 
