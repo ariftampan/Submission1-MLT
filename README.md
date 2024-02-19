@@ -1,4 +1,4 @@
-# Laporan Proyek Machine Learning - Yance Arifiyanto
+# Laporan Proyek Machine Learning 
 
 ## Domain Proyek
 
