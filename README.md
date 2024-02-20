@@ -2,18 +2,16 @@
 
 ## I. Domain Proyek
 
-$$\ MSE = \sum_{k=1}^N (y_i-y\\_pred_i)^2 $$
-
 Harga rumah adalah faktor krusial dalam pasar perumahan, dan penentuan harga yang akurat memiliki dampak signifikan pada keputusan pembeli dan penjual. Menganalisis dan memprediksi harga rumah dengan tepat menjadi semakin penting karena kompleksitas pasar yang terus berkembang. Tantangan utama yang dihadapi dalam masalah harga rumah termasuk fluktuasi harga yang cepat, variasi nilai properti, dan dampak faktor eksternal seperti kondisi ekonomi dan sosial.
 Saat ini, ketidakpastian harga properti dapat menciptakan kesulitan bagi calon pembeli dan penjual. Dalam keadaan seperti ini, penggunaan model machine learning untuk menganalisis dan memprediksi harga rumah dapat memberikan solusi konkret, yaitu diantaranya:
 
-Keunggulan Prediksi Tepat
+II.1 Keunggulan Prediksi Tepat
 Model <i>machine learning</i>, seperti KNN, RF, dan Boosting Algorithms, memiliki kemampuan untuk memahami pola dan tren yang rumit dalam data harga rumah. Dengan demikian, penggunaan model ini dapat meningkatkan ketepatan dan akurasi dalam memprediksi harga rumah, memberikan keunggulan dalam pengambilan keputusan.
 
-Optimasi Harga
+II.2 Optimasi Harga
 Melalui analisis yang mendalam, model machine learning dapat membantu dalam mengoptimalkan penetapan harga rumah berdasarkan berbagai fitur dan faktor yang mempengaruhi harga. Ini dapat memungkinkan penjual untuk menentukan harga yang kompetitif dan pembeli untuk mendapatkan nilai terbaik.
 
-Adaptasi Terhadap Perubahan Pasar
+II.3 Adaptasi Terhadap Perubahan Pasar
 Dengan memanfaatkan teknik-teknik machine learning, model dapat beradaptasi dengan perubahan pasar secara real-time, memperhitungkan variabilitas yang mungkin terjadi. Hal ini memungkinkan pemangku kepentingan untuk mengambil keputusan yang lebih baik dan lebih cepat.
 
 ## II. Business Understanding
@@ -192,17 +190,28 @@ Berdasarkan perbandingan kinerja, Random Forest (RF) terbukti menjadi model yang
 
 ## VI. Evaluation
 
-Metrik Evaluasi Mean Squared Error (MSE)
+Metrik yang digunakan pada prediksi ini adalah MSE (<i>Mean Squared Error</i>) yang menghitung jumlah selisih kuadrat rata-rata nilai sebenarnya dengan prediksi. MSE didefiniskan dalam persamaan berikut:<br>
 
-|          | train           | test            |
-|----------|-----------------|-----------------|
-| KNN      | 25916939.173696 | 27128804.013141 |
-| RF       | 15879458.955688 | 28311697.896215 |
-| Boosting | 28678638.610698 | 25326550.111409 |
+$$\ MSE = \sum_{k=1}^N (y_i-y\\_pred_i)^2 $$
+dimana : <br>
+N= Jumlah dataset<br>
+yi= nilai sebenarnya<br>
+y_pred= nilai prediksi<br>
 
-Nilai MSE yang lebih rendah menunjukkan bahwa model memiliki tingkat kesalahan yang lebih kecil. dan nilai MSE yang lebih tinggi mengindikasikan bahwa model memiliki tingkat kesalahan yang lebih besar.
+Dengan menggunakan kode untuk menghitung nilai Mean Squared Error (MSE) diatas dan dibagi dengan 1e9 agar diperoleh hasil yg tidak terlalu besar, maka didapat hasil evaluasi sebagai berikut: <br>
 
-Dalam prediksi harga rumah, nilai MSE yang rendah menunjukkan bahwa model memberikan prediksi harga yang akurat dan mendekati nilai sebenarnya.
-Sebaliknya, nilai MSE yang tinggi menunjukkan bahwa model memiliki tingkat kesalahan yang besar dalam memprediksi harga rumah.
+|          | train     | test      |
+|----------|-----------|-----------|
+| KNN      | 25.916939 | 27.128804 |
+| RF       | 15.879459 | 28.311698 |
+| Boosting | 28.678639 |  25.32655 |
 
-Dari hasil evaluasi menggunakan MSE pada data latih dan data uji, telah dibandingkan performa relatif dari model KNN, Random Forest (RF), dan Boosting, dan dapat diambil kesimpulan bahwa Model RF dianggap lebih baik dalam konteks ini.
+Nilai Error yang lebih rendah menunjukkan bahwa model memiliki tingkat kesalahan yang lebih kecil. dan nilai error yang lebih tinggi mengindikasikan bahwa model memiliki tingkat kesalahan yang lebih besar.
+
+Dalam tabel diatas, nilai error yang paling rendah ditunjukkan oleh model RF. Hal ini memberi artian bahwa model RF mempunyai prediksi harga yang lebih akurat dan mendekati nilai sebenarnya.
+
+Untuk menguji apakah model RF lebih baik dari model lainnya, maka diambil satu sample dari data test, dan diuji dengan 3 model tersebut, sehingga diperoleh hasil sebagai berikut:
+
+|index|y\_true|prediksi\_KNN|prediksi\_RF|prediksi\_Boosting|
+|---|---|---|---|---|
+|3169|438000\.0|335503\.1|435927\.1|366183\.5|
