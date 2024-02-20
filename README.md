@@ -1,6 +1,8 @@
 # Laporan Proyek Machine Learning 
 
-## Domain Proyek
+## I. Domain Proyek
+
+$$\ MSE = \sum_{k=1}^N (y_i-y\\_pred_i)^2 $$
 
 Harga rumah adalah faktor krusial dalam pasar perumahan, dan penentuan harga yang akurat memiliki dampak signifikan pada keputusan pembeli dan penjual. Menganalisis dan memprediksi harga rumah dengan tepat menjadi semakin penting karena kompleksitas pasar yang terus berkembang. Tantangan utama yang dihadapi dalam masalah harga rumah termasuk fluktuasi harga yang cepat, variasi nilai properti, dan dampak faktor eksternal seperti kondisi ekonomi dan sosial.
 Saat ini, ketidakpastian harga properti dapat menciptakan kesulitan bagi calon pembeli dan penjual. Dalam keadaan seperti ini, penggunaan model machine learning untuk menganalisis dan memprediksi harga rumah dapat memberikan solusi konkret, yaitu diantaranya:
@@ -14,7 +16,7 @@ Melalui analisis yang mendalam, model machine learning dapat membantu dalam meng
 Adaptasi Terhadap Perubahan Pasar
 Dengan memanfaatkan teknik-teknik machine learning, model dapat beradaptasi dengan perubahan pasar secara real-time, memperhitungkan variabilitas yang mungkin terjadi. Hal ini memungkinkan pemangku kepentingan untuk mengambil keputusan yang lebih baik dan lebih cepat.
 
-## Business Understanding
+## II. Business Understanding
 
 Permasalahan utama yang ingin diselesaikan adalah ketidakpastian dalam penentuan harga rumah, yang saat ini dapat menciptakan kesulitan bagi calon pembeli dan penjual. Tantangan tersebut mencakup fluktuasi harga yang cepat, variasi nilai properti, dan dampak faktor eksternal seperti kondisi ekonomi dan sosial. Harga rumah yang tidak akurat dapat menyebabkan ketidaksetaraan dalam transaksi, membuat calon pembeli dan penjual mengalami kesulitan dalam pengambilan keputusan yang tepat.
 
@@ -37,7 +39,7 @@ Keberhasilan proyek ini akan diukur berdasarkan:
 - Akurasi prediksi harga rumah pada rentang waktu yang telah ditentukan.
   Dengan demikian, proyek dapat dianggap berhasil jika mampu mencapai kriteria diatas.
 
-## Data Understanding
+## III. Data Understanding
 
 ### Informasi Data:
 
@@ -67,10 +69,6 @@ variabel street
 Dari gambar dapat disimpulkan bahwa, hampir semua lokasi berbeda beda. terdapat 3604 rumah yang tersebar di 3596 jalan.
 
 ![univariate_street](https://github.com/ariftampan/Submission1-MLT/assets/138217930/9236ce59-8c74-41b0-9d7c-53ee6075c4cd)
-
-
-variabel city
-<img width="226" alt="Screenshot 2024-02-13 175917" src="https://github.com/ariftampan/Submission1-MLT/assets/138217930/80407583-5d0a-4d04-9a50-c3c6eaeb23db">
 
 ![city](https://github.com/ariftampan/Submission1-MLT/assets/138217930/1888e8f7-b7eb-4eee-bbfa-8ab512a31773)
 
@@ -109,7 +107,7 @@ dapat disimpulkan bahwa sqft_living dan sqft_above adalah yang memiliki relasi d
 Kesimpulan Data Understanding:
 Data yang digunakan untuk prediksi harga rumah mencakup berbagai fitur dan karakteristik properti. EDA telah membantu mendapatkan wawasan mendalam terhadap variabel-variabel tersebut dan hubungannya dengan harga. Data ini siap digunakan dalam pengembangan model machine learning untuk memprediksi harga rumah dengan lebih akurat, dengan fokus pada fitur-fitur yang signifikan yaitu <b>sqft_living</b>, dan <b>sqft_above</b> dalam menentukan nilai properti.
 
-## Data Preparation
+## IV. Data Preparation
 
 Pada tahap persiapan data (data preparation) proyek prediksi harga rumah, berbagai teknik telah diterapkan untuk memastikan bahwa dataset siap untuk digunakan dalam pengembangan model machine learning. Berikut adalah teknik-teknik yang diterapkan berurutan dalam notebook:
 
@@ -136,7 +134,7 @@ Dampak Terhadap Model:
 
 Dengan menerapkan teknik-teknik data preparation ini, diharapkan dataset yang dihasilkan akan mendukung pengembangan model machine learning yang akurat, efisien, dan memiliki kemampuan generalisasi yang baik.
 
-## Modeling
+## V. Modeling
 
 Dalam tahap pemodelan untuk proyek prediksi harga rumah, tiga model machine learning telah diterapkan: K-Nearest Neighbors (KNN), Random Forest (RF), dan Boosting Algoritm. Berikut adalah rincian mengenai setiap model:
 
@@ -192,11 +190,15 @@ Detail Perbandingan Kinerja:
 Kesimpulan:
 Berdasarkan perbandingan kinerja, Random Forest (RF) terbukti menjadi model yang unggul dalam prediksi harga rumah. Keakuratan dan kestabilan RF menjadikannya pilihan yang efektif dan dapat diandalkan untuk menangani kompleksitas dalam dataset ini. Dengan demikian, RF dianggap sebagai model terbaik untuk tugas prediksi harga rumah dalam konteks proyek ini.
 
-## Evaluation
+## VI. Evaluation
 
 Metrik Evaluasi Mean Squared Error (MSE)
 
-![tabel mse](https://github.com/ariftampan/Submission1-MLT/assets/138217930/60ba25b9-e74d-470b-9252-ebd931fcf32b)
+|          | train           | test            |
+|----------|-----------------|-----------------|
+| KNN      | 25916939.173696 | 27128804.013141 |
+| RF       | 15879458.955688 | 28311697.896215 |
+| Boosting | 28678638.610698 | 25326550.111409 |
 
 Nilai MSE yang lebih rendah menunjukkan bahwa model memiliki tingkat kesalahan yang lebih kecil. dan nilai MSE yang lebih tinggi mengindikasikan bahwa model memiliki tingkat kesalahan yang lebih besar.
 
